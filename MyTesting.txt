@@ -1,0 +1,97 @@
+*****Testing Constructors for LongInt*****
+Default Constructor
+Testing: LongInt l; 
+LongInt l: 0
+Constructor w/String Input Parameter
+Testing: LongInt l2 = 1234567890987654321;
+LongInt l2: 1234567890987654321
+Copy Constructor
+Testing LongInt l3 = l2;
+LongInt l3: 1234567890987654321
+l: 0
+l2: 1234567890987654321
+l3: 1234567890987654321
+
+*****Testing Input/Output Operator for LongInt*****
+In this section, I am testing to make sure that I accept proper inputs and that I output them correctly.
+Enter a LongInt that is positive for the first input: 123456789
+Enter a LongInt that is negative for the second input: -987654321
+Enter a LongInt that has 0's on the front for the third input: 0000123045607890
+Enter a LongInt that has non-digit characters for the fourth input: 123a456b789c
+First Input: 123456789
+Second Input: -987654321
+Third Input: 123045607890
+Fourth Input: 123456789
+
+For this next portion of my driver code, I will be testing my arithmetic operators and my local binary operators against the same few LongInts.
+These LongInts are the following: 
+a = 123456
+b = -999999
+c = 111111
+d = -101010
+Again, I will use the LongInts a, b, c, and d when testing the arithmetic and binary operators.
+
+*****Testing Arithmetic Operators for LongInt*****
+Operator+
+a + b = -876543
+b + a = -876543
+c + d = 10101
+d + c = 10101
+
+Operator-
+a - b = 1123455
+b - a = -1123455
+c - d = 212121
+d - c = -212121
+
+*****Testing Binary Comparison Operators for LongInt*****
+Operator<
+(a < b) ? : a is NOT less than (<) b
+
+(c < d) ? : c is NOT less than (<) d
+
+Operator>
+(a > b) ? : a is greater than (>) b
+
+(c > d) ? : c is greater than (>) d
+
+Operator==
+(a == b) ? : a is NOT exactly equal to b
+
+(c == d) ? : c is NOT exactly equal to d
+
+Operator!=
+(a != b) ? : a is NOT equal to b
+
+(c != d) ? : c is NOT equal to d
+
+Operator<=
+(a <= b) ? : a is NOT less than or equal to (<=) b
+
+(c <= d) ? : c is NOT less than or equal to (<=) d
+
+Operator>=
+(a >= b) ? : a is greater than or equal to (>=) b
+
+(c >= d) ? : c is greater than or equal to (>=) d
+
+I have tested general cases for all the functions in the LongInt class.
+I will now test some edge cases.
+First I will create the following LongInt variables: 
+LongInt t1: 123456789
+LongInt t2: -123456789
+LongInt t3: 0 -> This LongInt was initialized with the string '-0', just to show an edge case.
+LongInt t4: 0
+LongInt t5: 123456789
+
+t1 + t2 = 0
+t2 + t1 = 0
+
+t1 - t2 = 246913578
+t2 - t1 = -246913578
+t2 - t2 = 0
+Testing Edge Caes of Binary Comparison Operators
+Correct.
+Correct.
+Correct.
+Correct.
